@@ -74,9 +74,16 @@ export function OrganizationsClient({ initialOrganizations }: OrganizationsClien
 
   return (
     <>
-      <div className="mb-8 space-y-4">
-        <h1 className="text-3xl font-bold">Organizations Directory</h1>
-        <SearchInput value={searchQuery} onChange={setSearchQuery} />
+      <div className="flex flex-col items-center justify-center min-h-[40vh] bg-gradient-to-b from-background to-muted/20 px-4">
+      <div className="w-full max-w-4xl space-y-8 text-center"></div>
+        <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80 pb-1" >
+        Chicago Tech Directory
+        </h1>
+        <div className="relative group w-full max-w-2xl mx-auto"></div>
+        <SearchInput 
+          value={searchQuery} 
+          onChange={setSearchQuery} 
+        />
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
