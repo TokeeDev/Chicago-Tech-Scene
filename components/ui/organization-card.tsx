@@ -58,8 +58,10 @@ export function OrganizationCard({
 
   // Filter out empty social links
   const validSocialLinks = Object.entries(socialLinksData).filter(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     ([_, url]) => url && url !== ""
   );
+  
 
   return (
     <Card className="h-full">
